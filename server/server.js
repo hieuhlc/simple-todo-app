@@ -22,7 +22,7 @@ mongoose.connect(serverConfig.mongoURL, (error) => {
 });
 
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('client/build'));
+  app.use(Express.static('client/build'));
 }
 
 // Apply body Parser and server public assets and routes
